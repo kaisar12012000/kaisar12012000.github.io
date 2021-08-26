@@ -1,0 +1,267 @@
+body {
+    padding: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #DEEDF0;
+}
+header {
+    background-color: #E8F0F2;
+    height: 100vh;
+}
+
+nav a {
+    color: black;
+}
+nav .navbar-header .navbar-brand {
+    font-weight: 600;
+}
+nav button{
+    display: none;
+}
+nav ul li a {
+    font-weight: 300;
+}
+nav ul li a:hover {
+    transition-property: all;
+    transition-duration: 0.4s;
+}
+nav ul li .login {
+    margin: 6px;
+    padding: 9px;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+}
+nav ul li .login:hover {
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    transition-property: all;
+    transition-duration: 0.4s;
+}
+
+.banner {
+    background-image: url("person1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.display-3 {
+    font-size: 88px;
+}
+
+button{
+    margin: 6px;
+    padding: 9px;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+}
+h1 {
+    font-size: 80px;
+}
+
+.newArivals {
+    margin: 0px 0px 0px;
+    padding: 100px 40px 120px;
+    background-color: #fff;
+}
+.newArivals img {
+    width: 400px;
+    height: 600px;
+    padding-top: 40px;
+}
+.payday {
+    margin: 0px;
+    padding: 100px 40px 100px;
+    background-color: orangered;
+    /*background-image: url("person2.png");
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+.stores {
+    margin: 0px;
+    padding-top: 100px;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #fff;
+}
+/*.image-col {
+    margin: 10px 20px;
+    padding: 20px;
+}
+.stores_pic {
+    width: 100px;
+    height: 100px;
+    margin: 20px 0px 10px;
+    padding: 20px;
+    background-color: #DEEDF0;
+}*/
+.store_col {
+    margin: 40px 0px 20px;
+}
+.store_col img {
+    width: 200px;
+    height: 150px;
+    background-color: #EEEEEE;
+    padding: 15px;
+}
+.youngs {
+    background-color: #FFF;
+    padding: 150px 20px 150px;
+}
+.youngs img {
+    width: 320px;
+    height: 380px;
+}
+.approval {
+    background-color: #EEEEEE;
+}
+.line1 {
+    font-size: 26px;
+}
+article {
+    background-color: #fff;
+}
+.phone {
+    width: 580px;
+    height: 580px;
+}
+.promo {
+    background-color: orangered;
+    color: #fff;
+    padding: 100px 50px;
+}
+.promo h2 {
+    padding: 20px 60px;
+    font-size: 36px;
+}
+.promo small {
+    padding: 20px 60px;
+}
+.promo form {
+    border: 2ps solid #eee;
+    border-radius: 4px;
+    background-color: white;
+    padding: 4px;
+    margin: 20px 0px;
+    width: fit-content;
+}
+.promo form input {
+    border: none;
+}
+footer {
+    background-color: #000;
+    color: #fff;
+}
+footer div {
+    padding: 80px;
+}
+footer div span {
+    font-size: 12px;
+}
+.footer-child {
+    padding-top: 80px;
+    font-size: 12px;
+}
+.footer-child b {
+    font-size: 16px;
+}
+.fa {
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    width: fit-content;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: orangered;
+    color: #000;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: orangered;
+    color: #000;
+  }
+  /*linkedin*/
+  .fa-linkedin {
+    background: orangered;
+    color: #000;
+  }
+  /*instagram*/
+  .fa-instagram {
+    background: orangered;
+    color: #000;
+  }
+  @media(max-width:768px){
+      header {
+          height: 750px;
+      }
+      nav .navbar-header .navbar-brand{
+          font-size: 18px;
+      }
+      
+      nav button {
+          display: inline-block;
+      }
+      .collapse {
+        display: none;
+    }
+    .display-3 {
+        font-size: 48px;
+    }
+    .newArivals img {
+        height: 500px;
+        width: 250px;
+    }
+    .person {
+        display: none;
+    }
+    .paydayp {
+        padding: 20px 40px 10px 0px;
+    }
+    .stores {
+        text-align: center;
+    }
+    .storesp {
+        padding: 20px 50px 5px 0px;
+    }
+    .approval img {
+        width: 240px;
+        height: 400px;
+    }
+    .downloadp {
+        padding: 60px 50px 5px 0px;
+    }
+    .phone {
+        height: 290px;
+        width: 290px;
+        padding-bottom: 40px;
+    }
+    .promo h2 {
+        padding: 10px 30px;
+        font-size: 28px;
+    }
+    .promo small {
+        padding: 10px 30px;
+    }
+    .footer-child {
+        padding-top: 20px;
+        font-size: 12px;
+    }
+    
+  }
