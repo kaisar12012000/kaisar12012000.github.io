@@ -1,0 +1,263 @@
+.head_appear {
+    position: relative;
+    animation: animatetop 0.6s;
+}
+@keyframes animatetop{
+    from{top:-300px;opacity:0}
+    to{top:0;opacity:1}
+}
+.left_sliders{
+    position: relative;
+    animation: animateleft 0.6s;
+}
+@keyframes animateleft {
+    from{left: -300px; opacity: 0}
+    to{left: 0; opacity: 1;}
+}
+header {
+    background-image: url("images/hero.jpg");
+    background-image: url("images/hero.jpg"), linear-gradient( rgba(0,0,0,0.6), rgba(0,0,0,0.3));
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.blink {
+    animation: blink-animation 0.6s steps(5, start) infinite;
+    -webkit-animation: blink-animation 0.6s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+
+  .typewritter b {
+      padding: 0;
+    display: inline-block;
+  	overflow: hidden;
+  	letter-spacing: 2px;
+ 	animation: typing 5s steps(30, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    border-right: 4px solid #800080;
+    box-sizing: border-box;    
+}
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 38% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    38% { border-color: #800080; }
+  }
+
+.offcanvas_menu {
+    background-image: url("images/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner {
+    color: #fff;
+    margin: 200px auto;
+    position: relative;
+    animation:animatetop 0.6s
+}
+@keyframes animatetop{
+    from{top:-300px;opacity:0}
+    to{top:0;opacity:1}
+}
+.clickMe1 {
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: #000;
+    border-radius: 25px;
+    margin: 8px;
+    padding: 8px 20px;
+    position:relative;
+    animation:animatebottom 1s
+}
+@keyframes animatebottom{
+    from{bottom:-300px;opacity:0}
+    to{bottom:0;opacity:1}
+}
+.clickMe1:hover {
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+    transition-property: all;
+    transition-duration: 0.6s;
+}
+.clickMe2 {
+    text-decoration: none;
+    border: 2px solid #fff;
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+    border-radius: 25px;
+    margin: 8px;
+    padding: 8px 20px;
+    position:relative;
+    animation:animatebottom 1s
+}
+@keyframes animatebottom{
+    from{bottom:-300px;opacity:0}
+    to{bottom:0;opacity:1}
+}
+.clickMe2:hover {
+    background-color: #fff;
+    color: #000;
+    transition-property: all;
+    transition-duration: 0.6s;
+}
+.clickMe3 {
+    border: 2px solid 	#800080;
+    color: 	#800080;
+    background-color: #fff;
+    border-radius: 25px;
+    margin: 8px;
+    padding: 8px;
+}
+.clickMe3:hover {
+    color: 	#fff;
+    background-color: #800080;
+    transition-property: all;
+    transition-duration: 0.6s;
+}
+.clickMe4 {
+    border: 2px solid 	#800080;
+    color: 	#fff;
+    background-color: #800080;
+    border-radius: 25px;
+    margin: 8px;
+    padding: 8px 14px;
+}
+.clickMe4:hover {
+    transition-property: all;
+    transition-duration: 0.6s;
+    color: 	#800080;
+    background-color: #fff;
+}
+.aboutMe {
+    margin: 100px auto;
+}
+.aboutMe div {
+    margin-top: 30px;
+}
+.profile_pic{
+    width: 230px;
+    height: 300px;
+    border-radius: 0px 70px;
+}
+.skills {
+    margin: 60px auto;
+}
+.skill {
+    padding: 40px 10px;
+    border: 2px solid #800080;
+}
+.skill:hover {
+    color: #fff;
+    background-color: rgba(128, 0, 128, 0.6);
+    background-image: url("images/skill.png");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    transition-property: all;
+    transition-duration: 0.6s;
+}
+.project {
+    margin: 80px auto;
+}
+.blank {
+    height: 60px;
+}
+.carousel {
+    margin: 60px auto;
+    padding: 60px auto;
+}
+.carousel-inner {
+    background-color: #800080;
+    height: 336px;
+}
+.carousel-item {
+    padding: 100px;
+    /* border-top: 2px solid rgba(128, 0, 128, 0.6);
+    border-bottom: 2px solid rgba(128, 0, 128, 0.6); */
+    color: #fff;
+}
+.web_dev {
+    width: 600px;
+    height: 400px;
+    padding: 40px 50px;
+}
+.what_you_get {
+    padding: 150px 80px;
+}
+.mobile_dev {
+    width: 400px;
+    height: 600px;
+    padding-left: 50px;
+}
+@media (max-width: 1200px){
+    .web_dev {
+        width: 500px;
+        height: 300px;
+        padding: 30px 40px;
+    }
+    .mobile_dev {
+        width: 300px;
+        height: 500px;
+        padding-left: 30px;
+    }
+}
+@media (max-width: 992px){
+    .web_dev {
+        width: 400px;
+        height: 200px;
+        padding: 20px;
+    }
+    .mobile_dev {
+        width: 200px;
+        height: 400px;
+        padding-left: 50px;
+    }
+}
+@media (max-width: 768px){
+    .image {
+        display: none;
+    }
+    .web_dev {
+        display: none;
+    }
+    .mobile_dev {
+        display: none;
+    }
+    .what_you_get {
+        padding: 20px 0px;
+    }
+}
+.footer_main {
+    margin-top: 80px;
+}
+.footer {
+    padding: 40px 12px;
+    background-color: #800080;
+    color: #fff;
+}
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+.carousel .carousel-inner .carousel-item a {
+    text-decoration: none; color: #fff; padding: 8px; border: 1px solid #fff; border-radius: 4px;
+}
+.carousel .carousel-inner .carousel-item a:hover {
+    transition-property: all;
+    transition-duration: 0.6s;
+    background-color: #fff;
+    color: #800080;
+}
