@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/account.css">
+    <title>Welcome Irshad</title>
+</head>
+<body>
+    <header>
+        <!------------------------------------------------Navbar------------------------------------------------------------------------>
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <a class="navbar-brand" href="#">Brand Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Images
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Footage
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li> -->
+              </ul>
+              <div class="row my-2 my-lg-0">
+                <div class="nav-item">
+                  <a style="color: #000" href="#" class="nav-link">Pricing</a>
+                </div>
+                <button class="btn transparent_button" type="submit" data-toggle="modal" data-target="#loginModal">Logout</button>
+            </div>
+            </div>
+          </nav>
+        <!------------------------------------------------Header------------------------------------------------------------------------->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 drawer">
+                <ul class="drawer-navigation" id="drawerExtendedNav">
+                    <li class="drawer-nav-item">
+                        <a href="#Profile" class="drawer-nav-link"><i class="fa fa-user"></i>  Profile</a>
+                    </li>
+                    <li class="drawer-nav-item">
+                        <a href="#Dashboard" class="drawer-nav-link"><i class="fa fa-columns"></i>  Dashboard</a>
+                    </li>
+                    <li class="drawer-nav-item">
+                        <a href="#YourPosts" class="drawer-nav-link"><i class="fa fa-file"></i>  Your Posts</a>
+                    </li>
+                    <li class="drawer-nav-item">
+                        <a href="#Plans" class="drawer-nav-link"><i class="fa fa-gift"></i>  Plans</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 content">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="Profile">
+                    <span class="username">Hello <b>Irshaduddin</b></span><br>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tbody>
+                              <tr>
+                                <td>Email:</td>
+                                <td>kaisarnagpur@gmail.com</td>
+                                <td><a href="#">Change Email</a></td>
+                              </tr>
+                              <tr>
+                                <td>User Id</td>
+                                <td>123987456</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>User name</td>
+                                <td>kaisarnagpur123987456</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>Password:</td>
+                                <td>*********</td>
+                                <td><a href="#">Change Password</a></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                      <span class="details-dashboard username">Your Dashboard</span><br>
+                      <div class="dashboard-row">
+                          <div class="dashboard-row-element">
+                              <center>
+                                  <span class="element-title">Post</span><br>
+                                  <span class="element-value">0</span>
+                              </center>
+                          </div>
+                          <div class="dashboard-row-element">
+                            <center>
+                                <span class="element-title">Images</span><br>
+                                <span class="element-value">0</span>
+                            </center>
+                        </div>
+                        <div class="dashboard-row-element">
+                            <center>
+                                <span class="element-title">Videos</span><br>
+                                <span class="element-value">0</span>
+                            </center>
+                        </div>
+                      </div>
+                      <span class="username">Your Posts</span><br>
+                      <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12"></div>
+                          <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 text-center add_option" >
+                              <i class="fa fa-plus add_icon"></i><br>
+                              <small style="color: #0066FF;">Add Image</small>
+                          </div>
+                          <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12"></div>
+                          <div class="col-lg-5 col-md-5 col-sm-2 col-xs-12 text-center add_option">
+                            <i class="fa fa-plus add_icon"></i><br>
+                            <small style="color: #0066FF;">Add video</small>
+                        </div>
+                      </div>
+                      <span class="username">Your Plans</span><br>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+</body>
+</html>
