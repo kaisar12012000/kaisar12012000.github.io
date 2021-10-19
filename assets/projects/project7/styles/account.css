@@ -1,0 +1,89 @@
+.drawer {
+    border-top: 1px solid #a0a0a0;
+    height: 100%;
+}
+.drawer-navigation {
+    margin-top: 20px;
+    /* padding: auto 10px; */
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+.drawer-nav-item {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #a0a0a0;
+    margin-bottom: 15px;
+}
+.drawer-nav-link {
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+}
+.content {
+    border-top: 1px solid #a0a0a0;
+    border-left: 1px solid #a0a0a0;
+    padding-top: 10px;
+}
+.account-details {
+    padding-top: 10px;
+}
+.details-row {
+    display: flex;
+    justify-content: space-between;
+}
+.username {
+    padding: 10px 30px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+@media (max-width: 1200px) {
+    .username {
+        padding: 10px 15px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+@media (max-width: 996px) {
+    .username {
+        padding: 10px;
+        font-size: 18px;
+    }
+}
+@media (max-width: 776px) {
+    .username {
+        padding: 10px;
+        font-size: 18px;
+    }
+}
+.dashboard-row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.element-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333
+}
+.element-value {
+    font-size: 20px;
+    color: #a0a0a0;
+    font-weight: 500;
+}
+.add_option {
+    align-items: center;
+    border: 2px dashed #0066FF;
+    border-radius: 12px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 10px;
+}
+.add_icon {
+    font-size: 60px;
+    color: #0066FF;
+}
