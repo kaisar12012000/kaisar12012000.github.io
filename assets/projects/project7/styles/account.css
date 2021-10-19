@@ -9,6 +9,14 @@
     list-style: none;
     width: 100%;
 }
+@media (max-width: 1200px) {
+    .drawer {
+        border-top: none;
+    }
+    .drawer-navigation {
+        display: none;
+    }
+}
 .drawer-nav-item {
     padding-bottom: 20px;
     border-bottom: 1px solid #a0a0a0;
@@ -23,6 +31,12 @@
     border-top: 1px solid #a0a0a0;
     border-left: 1px solid #a0a0a0;
     padding-top: 10px;
+}
+@media (max-width: 1200px) {
+    .content {
+        border-top: none;
+        border-left: none;
+    }
 }
 .account-details {
     padding-top: 10px;
