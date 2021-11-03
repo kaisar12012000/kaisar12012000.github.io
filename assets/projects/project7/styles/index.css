@@ -1,5 +1,9 @@
 
 /* ---------------------------------------------navigation--------------------------------------------------- */
+#logo {
+    width: 144px;
+    height: 53px;
+}
 nav div ul a {
     font-size: 14px;
     font-weight: 600;
@@ -25,36 +29,42 @@ nav .row span a {
 .transparent_button {
     padding: 8px;
     border-radius: 25px;
-    border: 2px solid #000;
-    background-color: transparent;
+    border: 2px solid #CC3333;
+    background-color: #CC3333;
     /* margin: auto 10px; */
-    color: #000
+    color: #000;
 }
 
 .colored_button_white {
     padding: 8px;
     border-radius: 25px;
-    border: 2px solid #000;
+    border: 2px solid #CC3333;
     background-color: #000;
-    color: #fff;
+    color: #CC3333;
     margin: auto 10px;
 }
 .colored_button_orange {
     padding: 8px;
     border-radius: 25px;
-    border: 2px solid tomato;
-    background-color: tomato;
+    border: 2px solid #CC3333;
+    background-color: #CC3333;
     color: #fff;
     /* margin: auto 10px; */
     padding-top: 10px;
     padding-bottom: 10px;
 }
 /* ---- button hover ---- */
-.transparent_button:hover,
+.transparent_button:hover {
+    border: 2px solid #CC3333;
+    background-color: #000;
+    color: #CC3333;
+    transition-property: all;
+    transition-duration: 0.6s;
+}
 .colored_button_white:hover {
-    background-color: tomato;
-    border: 2px solid tomato;
-    color: #fff;
+    background-color: #CC3333;
+    border: 2px solid #CC3333;
+    color: #000;
     transition-property: all;
     transition-duration: 0.6s;
 }
@@ -65,6 +75,20 @@ nav .row span a {
     transition-duration: 0.6s;
 }
 /* ---------------------------------------------header--------------------------------------------------- */
+.banner_text {
+    color: #CC3333;
+    font-size: 48px;
+}
+@media (max-width: 500px) {
+    .banner_text {
+        font-size: 32px;
+    }
+}
+@media (max-width: 250px) {
+    .banner_text {
+        font-size: 24px;
+    }
+}
 .searching {
     width: 100%;
     margin-top: 30px;
@@ -89,24 +113,37 @@ nav .row span a {
     padding-top: 10px;
     padding-bottom: 11px;
     padding-left: 5px;
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
     border: 1px solid #a0a0a0;
     background-color: #fff;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-right: -2.5px;
 }
 .search_textfield {
-    width: 70%;
-    border: 1px solid #a0a0a0
+    width: 60%;
+    border: 1px solid #a0a0a0;
+    margin-right: -4.2px;
+    border-left: none;
+    /*
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px; */
+}
+@media (max-width: 1200px) {
+    .search_textfield {
+        width: 40%
+    }
 }
 .search_icon_button {
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
-    border: 1px solid tomato;
-    background-color: tomato;
+    border: 1px solid #CC3333;
+    background-color: #CC3333;
     color: #fff;
     padding-left: 15px;
     padding-right: 15px;
-}
+}/*
 .search_by_images {
     border-radius: 12px;
     border: 1px solid #a0a0a0;
@@ -115,7 +152,7 @@ nav .row span a {
     margin-left: 10px;
     padding-left: 10px;
     padding-right: 10px
-}
+} */
 /* --- media query for the search by image button ---*/
 @media (max-width: 1200px) {
     .search_by_images {
@@ -123,11 +160,15 @@ nav .row span a {
     }
 }
 .header_banner {
-    background-image: url('../images/banner.jpg');
-    background-image: url('../images/banner.jpg'), linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3));
+    background-image: url('../images/banner_updated.jpg');
+    background-image: url('../images/banner_updated.jpg'), linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3));
     background-size: cover;
     background-repeat: no-repeat;
     height: 30vh;
+    margin-top: 15px;
+    align-items: center;
+    padding-top: 67px;
+    padding-bottom: 67px;
 }
 /* ----------------------------------------------black strip------------------------------------------------------ */
 .black-strip {
@@ -232,4 +273,20 @@ nav .row span a {
     .signUpForm {
         border-left: none;
     }
+}
+footer {
+    margin-top: 50px;
+    padding: 30px 20px 50px;
+    background-color: #000;
+    color: #fff
+}
+.div_head {
+    font-size: 28px;
+}
+footer div div span a {
+    color: #fff;
+}
+footer div div span a:hover {
+    text-decoration: none;
+    color: #eee
 }
